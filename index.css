@@ -1,7 +1,5 @@
-* {
-    box-sizing: border-box;
-    background-color: #eef0bf;
-}
+* { box-sizing: border-box; }
+body {background-color: #eef0bf; }
 
 body {
     font-family: 'Times New Roman', Times, serif;
