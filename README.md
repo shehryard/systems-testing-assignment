@@ -27,6 +27,9 @@ This project was chosen because:
 - The course tutorials provide a starting block
 - Beginner level coding knowledge is required to build this application
 
+<img width="1260" height="444" alt="image" src="https://github.com/user-attachments/assets/74634c44-8d35-4f7f-9da6-31d8379a2fca" />
+
+
 ## 3. Requirements
 
 ### 3.1 Functional Requirements (FR)
