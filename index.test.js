@@ -73,5 +73,18 @@ describe("test that numbers below 1 and above 3999 cannot be converted", () => {
     test("should not convert 4000 and above", () => {
         expect(numToRoman(4001)).toEqual("The Romans had no representation for values above 3999");
     });
+    // added more tests for the new validation behaviour
+    test("3999 is MMMCMXCIX", () => {
+        expect(numToRoman(3999)).toBe("MMMCMXCIX");
+    });
+    test("4000 is rejected", () => {
+        expect(numToRoman(4000)).toBe("The Romans had no representation for values above 3999");
+    });
+    test("decimal input is rejected", () => {
+        expect(numToRoman(2.5)).toBe("Please enter a whole number (no decimals).");
+    });
+    test("non-numeric input is rejected", () => {
+        expect(numToRoman("abc")).toBe("Please enter a valid number.");
+    });
 });
 })
