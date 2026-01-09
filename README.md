@@ -1,4 +1,4 @@
-<img width="720" height="390" alt="decimal bug systems testing" src="https://github.com/user-attachments/assets/9dd55414-bccb-4805-9de6-788a0ba23591" /># Systems Tesing Summative 1
+# Systems Tesing Summative 1
 
 ## 1. Project Overview
 This project is a Roman Numeral Encoder that converts an Arabic integer into Roman numerals using standard Roman numeral rules. It is a small beginner-friendly web application built with HTML, CSS, JavaScript, and Jest.
@@ -62,6 +62,7 @@ Board columns included: Backlog, Ready, In Progress, In Review, Done.
 
 Ticket structure:
 Each ticket includes a clear description, acceptance criteria and bug tickets include reproduction steps. Traceability is also clearly highlighted and shown in each ticket, with a new branch being created for each item to avoid confusion.
+
 <img width="1872" height="930" alt="ticket example" src="https://github.com/user-attachments/assets/21796e5d-d4d7-4f71-8d39-94334a8c49d5" />
 
 
@@ -84,15 +85,19 @@ This bug was fixed using a test-first approach.
 
 Before fix: 
 Decimals were still being converted, such as 2.0
+
 <img width="720" height="390" alt="decimal bug systems testing" src="https://github.com/user-attachments/assets/8a9b8628-e7ef-4195-8f40-42087ee47618" />
 
 This resulted in the test failing:
+
 <img width="2493" height="1197" alt="bug evidence failing test" src="https://github.com/user-attachments/assets/5134fd40-71a6-4001-b205-1a90dfa559a2" />
 
 After another unit test was added as part of the fix for this bug, the test had passed:
+
 <img width="1806" height="774" alt="bug fix successful" src="https://github.com/user-attachments/assets/623fc202-f09d-4b4b-b2db-0b165f11f9ef" />
 
 And this was reflected on the application:
+
 <img width="714" height="432" alt="image" src="https://github.com/user-attachments/assets/0e7b4bda-dedc-4fa7-b682-8d3d607bc1c9" />
 
 ## 5. Coding standards and workflow
