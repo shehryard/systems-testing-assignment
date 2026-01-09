@@ -25,3 +25,5 @@ FR5: UI output
 NFR1 Accessibility: The form works with keyboard-only navigation and announces output updates.  
 NFR2 Maintainability: Conversion logic is implemented as a pure function and unit tested.  
 NFR3 Reliability: Conversion is deterministic and consistent for the same input.
+
+## 3. Acceptance Criteria
