@@ -1,37 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Encode Roman Numerals</title>
-    <link href="index.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roman Numerals Encoder</title>
+  <link href="index.css" rel="stylesheet" />
 </head>
 
 <body>
-    <main class="container">
-    <h1> Roman Numerals Encoder</h1>
-    <form class="form">
-        <label class="form form_label" for="numeral"> Enter a number</label>
-        <div class="form_row">
-        <input class="form_input"id="numeral" type="number" placeholder="e.g.2022" required autofocus>
-        <button class="form_button" type="submit" aria-label="convert into Roman">Romanize!</button>
-        </div>
-    </form>
-    <div class="result"></div>
-    </main>
-<script src="index.js"></script>
-<script>
-    const form = document.querySelector('.form');
-    const result = document.querySelector('.result');
+  <main class="container">
+    <h1>Roman Numerals Encoder</h1>
 
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        var userInput = e.target[0].value;
-        var romanNum = numToRoman(userInput);
-        result.textContent = romanNum;
+    <form class="form">
+      <label class="form__label" for="numeral">Enter a number</label>
+
+      <div class="form__row">
+        <input class="form__input" id="numeral" type="text" placeholder="e.g. 2022" required autofocus aria-describedby="message" />
+        <button class="form__button" type="submit">Romanize!</button>
+      </div>
+    </form>
+
+    <div id="message" class="result" aria-live="polite"></div> <!-- Added aria live for accessibility-->
+  </main>
+
+  <script src="index.js"></script>
+  <script>
+    const form = document.querySelector(".form");
+    const input = document.querySelector("#numeral");
+    const message = document.querySelector("#message");
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const output = numToRoman(input.value);
+      message.textContent = output;
     });
-</script>
+  </script>
 </body>
 </html>
