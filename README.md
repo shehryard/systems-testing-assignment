@@ -29,3 +29,5 @@ NFR3 Reliability: Conversion is deterministic and consistent for the same input.
 ## 3. UI checks (pass/fail)
 
 ### Accessibility checks (aria-label, keyboard navigation, aria-live)
+
+## 4. Manual End-to-End Test Table
