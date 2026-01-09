@@ -7,9 +7,9 @@ const numToRoman = (num) => {
   num = Number(num);
 
   if (!Number.isFinite(num)) return "Please enter a valid number.";
-  if (!Number.isInteger(num)) return "Please enter a whole number (no decimals).";
-  if (num > 3999) return "The Romans had no representation for values above 3999";
-  if (num <= 0) return "The Romans had no representation for 0 and below";
+  if (!Number.isInteger(num)) return "Please enter a whole number (no decimals)."; //validation for decimals
+  if (num > 3999) return "The Romans had no representation for values above 3999"; //validation for numbers above 3999
+  if (num <= 0) return "The Romans had no representation for 0 and below"; // validation for numbers below 1 and negative values
 
   let result = "";
 
