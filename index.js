@@ -4,7 +4,14 @@ const Roman = ['M', 'CM', 'D', 'CD', 'C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV',
 const arabic = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
 
 const numToRoman = (num) => {
-  num = Number(num);
+    const raw = String(num ?? "").trim()
+    
+    // Reject any decimal format like "2.0" or "2.5"
+    if (raw.includes(".")){
+        return "Please enter a whole number (no decimals).";
+    }
+
+  num = Number(raw);
 
   if (!Number.isFinite(num)) return "Please enter a valid number.";
   if (!Number.isInteger(num)) return "Please enter a whole number (no decimals)."; //validation for decimals

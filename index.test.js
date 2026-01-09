@@ -86,5 +86,10 @@ describe("test that numbers below 1 and above 3999 cannot be converted", () => {
     test("non-numeric input is rejected", () => {
         expect(numToRoman("abc")).toBe("Please enter a valid number.");
     });
+    // test for decimal bug fix - inputting a value of 2.0 is showing as II when romanizing, however it should not accept any decimal values.
+    test("decimal formatted input like 2.0 is rejected", () => {
+        expect(numToRoman("2.0")).toBe("Please enter a whole number (no decimals).");
+    });
+
 });
 })
