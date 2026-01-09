@@ -26,4 +26,6 @@ NFR1 Accessibility: The form works with keyboard-only navigation and announces o
 NFR2 Maintainability: Conversion logic is implemented as a pure function and unit tested.  
 NFR3 Reliability: Conversion is deterministic and consistent for the same input.
 
-## 3. Acceptance Criteria
+## 3. UI checks (pass/fail)
+
+### Accessibility checks (aria-label, keyboard navigation, aria-live)
