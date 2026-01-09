@@ -1,4 +1,4 @@
-# Systems Tesing Summative 1
+<img width="720" height="390" alt="decimal bug systems testing" src="https://github.com/user-attachments/assets/9dd55414-bccb-4805-9de6-788a0ba23591" /># Systems Tesing Summative 1
 
 ## 1. Project Overview
 This project is a Roman Numeral Encoder that converts an Arabic integer into Roman numerals using standard Roman numeral rules. It is a small beginner-friendly web application built with HTML, CSS, JavaScript, and Jest.
@@ -58,11 +58,17 @@ Project planning was carried out using GitHub Issues and a GitHub Projects Kanba
 
 Board columns included: Backlog, Ready, In Progress, In Review, Done.
 
+<img width="1803" height="972" alt="github kanban board" src="https://github.com/user-attachments/assets/88e546b9-6b84-4011-8ff3-cdbad25312ac" />
+
 Ticket structure:
-Each ticket includes a clear description, acceptance criteria and bug tickets include reproduction steps.
+Each ticket includes a clear description, acceptance criteria and bug tickets include reproduction steps. Traceability is also clearly highlighted and shown in each ticket, with a new branch being created for each item to avoid confusion.
+<img width="1872" height="930" alt="ticket example" src="https://github.com/user-attachments/assets/21796e5d-d4d7-4f71-8d39-94334a8c49d5" />
+
 
 Example Bug Ticket:
 BUG-1 - Decimal input not handled correctly
+
+<img width="975" height="813" alt="bug ticket example" src="https://github.com/user-attachments/assets/93247a08-8786-4614-b9b8-1c44ca494523" />
 
 Steps to reproduce:
 - Enter 2.0
@@ -75,6 +81,19 @@ Actual result:
 Conversion occurred.
 
 This bug was fixed using a test-first approach.
+
+Before fix: 
+Decimals were still being converted, such as 2.0
+<img width="720" height="390" alt="decimal bug systems testing" src="https://github.com/user-attachments/assets/8a9b8628-e7ef-4195-8f40-42087ee47618" />
+
+This resulted in the test failing:
+<img width="2493" height="1197" alt="bug evidence failing test" src="https://github.com/user-attachments/assets/5134fd40-71a6-4001-b205-1a90dfa559a2" />
+
+After another unit test was added as part of the fix for this bug, the test had passed:
+<img width="1806" height="774" alt="bug fix successful" src="https://github.com/user-attachments/assets/623fc202-f09d-4b4b-b2db-0b165f11f9ef" />
+
+And this was reflected on the application:
+<img width="714" height="432" alt="image" src="https://github.com/user-attachments/assets/0e7b4bda-dedc-4fa7-b682-8d3d607bc1c9" />
 
 ## 5. Coding standards and workflow
 Coding Standards:
@@ -121,13 +140,13 @@ Tests cover:
 - Boundary values (3999)
 - Invalid inputs: 0 and negatives, values above 3999, decimal input, non-numeric input.
 
-Tests are executed using the command 'npm test' in the visual studio code terminal.
+Tests are executed using the command 'npm test' in the visual studio code terminal and upon each pull and push request due to the addition of CI/CD pipeline.
 
 ## 9. UI and Accessibility Testing
 Manual UI Tests:
 - Valid number conversion displays correct result
 - Invalid input displays error message
-- UI updateson each submission
+- UI updates on each submission
 
 Accessibility checks:
 - Keyboard-only navigation works
@@ -138,6 +157,9 @@ Accessibility checks:
 - Passes google lighthouse test for accessibility
 
 All checks passed.
+
+<img width="534" height="798" alt="accessibility test lighthouse" src="https://github.com/user-attachments/assets/1a0550c6-7ac3-4326-8128-c9fbb98d340c" />
+
 
 ## 10. Continuous Integration and Deployment
 Continuous Integration (CI)
@@ -201,5 +223,5 @@ Values outside the specified range can be inputted to verify error message funct
 - Add more advanced coding logic and improve the application
 
 ## 16. Conclusion
-This projectdemonstrates a complete software development lifecycle, including planning, implementation, testing, deployment, and documentation.
+This project demonstrates a complete software development lifecycle, including planning, implementation, testing, deployment, and documentation.
 Despite its simplicity, it applies professional development practices appropriate for a systems tester who is looking to upskill in software development and become more involved with automationa and developer practices. 
